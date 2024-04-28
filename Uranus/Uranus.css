@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-image: url(./images/7520c546-06d7-4f98-8d35-ec1b9f4100d1\ -\ Copy.jpg);
+}
+
+button {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #034d85;
+    padding: 2px;
+    border-radius: .2rem;
+    transition: opacity .2s;
+    }
+    
+    button:hover {
+    cursor: pointer;
+    background: #0aaab6;
+    }
+
+a{
+    text-decoration: none;
+}
+
+header{
+    color: aliceblue;
+    width: 100%;
+    height: 810px;
+    padding-top: 200px;
+    padding-left: 15rem;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #0aaab6;
+    overflow: hidden;
+}
+
+header a{
+    margin-left: 0 auto;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    bottom: 17rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+
+h1{
+    color: #0aaab6;
+    font-size: 70px;
+    margin: 0px 0px 12.8px;
+}
+p{
+   width: 400px;
+   font-size: 20px;
+}
+
+model-viewer {
+    width: 600px;
+    height: 85vh;
+    left: 45%;
+    bottom: 530px;
+}
+
+.about p{
+    width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.gallery {
+    margin: 0 auto;
+    padding: 40px;
+    --s: 200px; /* control the size */
+    --g: 10px;  /* control the gap */
+    --f: 1.5;   /* control the scale factor */
+    
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+  }
+  
+
+.top10{
+    background-color: #0aaab6;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.top10 h2{
+    padding: 80px;
+    color: #fff;
+}
+
+.top10 p{
+    text-align: center;
+    margin: 0 auto;
+}
+.numbered_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 3px; /* Adjust the gap between items */
+    padding: 10px;
+}
+
+/* Style the grid items */
+.grid_item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Style the number count */
+.number_count {
+    font-size: 22px;
+}
+
+/* Style the numbered grid title */
+.numbered_grid_title {
+    font-size: 17.6px;
+    margin-top: 10px;
+}
+
+/* Style the thing fact paragraphs */
+.thing_fact p {
+    font-size: 15.2px;
+}
+
